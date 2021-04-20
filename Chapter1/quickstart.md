@@ -189,6 +189,7 @@
         2020-08-10, BUY CREATE, 3360.47
         2020-08-18, BUY CREATE, 3389.78
         Final Portfolio Value: 109613.53 
+
 - 获取订单状态，以及卖点的判断
     ```py
     class TestStrategy(bt.Strategy):
@@ -279,13 +280,15 @@
         # 7.打印策略执行后的资金
         print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
     ```
-    输出结果如下,为了计算方便，我们买入后直接持有了200天，这样只有一个订单被执行，可以看到，系统默认只下了一笔委托,最终盈利为: 3101.64 - 2937.09 = 164.55
+    输出结果如下,为了计算方便，我们买入后直接持有了200天，这样只有一个订单被执行，可以看到，系统的默认下单数为1（可以自己修改）,买入价格为下一个K线的开盘价,最终盈利为: 3101.64 - 2937.09 = 164.55。如果回测最后一天是有持仓的，则在计算最终组合的价值时使用持有股票最后的收盘价来折算。
         Starting Portfolio Value: 1000000.00
         2019-08-30, BUY EXECUTED, 2937.09
         2020-06-18, SELL EXECUTED, 3101.64
         Final Portfolio Value: 1000164.55
+
 - 利润的侵蚀者：佣金
-    ```py
+
+    ```python
     class TestStrategy(bt.Strategy):
         # 3.2 数据和策略添加到同一引擎后，在策略中可通过datas访问数据，这里仅获取了传送数据的收盘价信息
         def __init__(self):
@@ -360,15 +363,12 @@
             # 3.5.6 订单均已处理完成
             self.order = None
             
-        # 3.6.1 交易完成输出盈利
+        # 3.6.1 交易结果回调
         def notify_trade(self, trade):
             if not trade.isclosed:
                 return
-
             self.log('OPERATION PROFIT, GROSS %.2f, NET %.2f' %
                     (trade.pnl, trade.pnlcomm))
-
-        
     # 引用backtrader
     import backtrader as bt
     if __name__ == '__main__':
@@ -397,11 +397,13 @@
         # 7.打印策略执行后的资金
         print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
     ```
-    输出结果如下,相比上一节，增加了佣金，即Comm, 买卖均收取，极大侵蚀了利润。这里还没有添加印花税。
+    输出结果如下,相比上一节，增加了佣金，即Comm, 买卖均收取，极大侵蚀了利润。这里还没有添加印花税。中介收取的佣金如Comm所示:162.74 + 0.88+0.93=164.55， 而162.74才是最终的盈利。
         Starting Portfolio Value: 1000000.00
         2019-08-30, BUY EXECUTED, Price: 2937.09, Cost: 2937.09, Comm 0.88
         2020-06-18, SELL EXECUTED, Price: 3101.64, Cost: 2937.09, Comm 0.93
         2020-06-18, OPERATION PROFIT, GROSS 164.55, NET 162.74
         Final Portfolio Value: 1000162.74
+
 - 添加系统支持的一些指标
+
 - 可视化
