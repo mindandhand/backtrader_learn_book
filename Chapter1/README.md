@@ -8,7 +8,7 @@
     - Matplotlib 
         - 可视化不可缺少的依赖包
 - 安装
-    - pip 方式
+    - pip 方式,如果不成功，可以尝试在启动jupyter时，选择启动terminal，然后执行以下语句：
         - `pip install backtrader`
     - 源码方式，[下载地址](https://github.com/mementum/backtrader/releases
 )
