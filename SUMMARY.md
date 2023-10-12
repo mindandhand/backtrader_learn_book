@@ -15,5 +15,6 @@
 * [第2章 预备知识](Chapter2/README.md)
   * [2.1 akshare获取行情](Chapter2/akshare的使用.md)
   * [2.2 行情可视化](Chapter2/行情可视化-mplfinance.md)
+  * [2.3 时间序列分析](Chapter2/时间序列分析.md)
 * [第3章](Chapter3/README.md)
 * [第4章](Chapter4/README.md)
