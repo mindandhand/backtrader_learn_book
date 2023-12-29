@@ -14,22 +14,9 @@ daily.index.name = 'Date'
 mpf.plot(daily[-20:])
 ```
 
-                       Open         High          Low        Close    Adj Close  \
-    Date                                                                          
-    2020-08-18  3387.040039  3395.060059  3370.149902  3389.780029  3389.780029   
-    2020-08-19  3392.510010  3399.540039  3369.659912  3374.850098  3374.850098   
-    2020-08-20  3360.479980  3378.169922  3354.689941  3374.449951  3374.449951   
-    
-                    Volume  
-    Date                    
-    2020-08-18  3881310000  
-    2020-08-19  3884480000  
-    2020-08-20   571739650  
-
-
 
     
-![png](%E8%A1%8C%E6%83%85%E5%8F%AF%E8%A7%86%E5%8C%96-mplfinance_files/%E8%A1%8C%E6%83%85%E5%8F%AF%E8%A7%86%E5%8C%96-mplfinance_1_1.png)
+![png](%E8%A1%8C%E6%83%85%E5%8F%AF%E8%A7%86%E5%8C%96-mplfinance_files/%E8%A1%8C%E6%83%85%E5%8F%AF%E8%A7%86%E5%8C%96-mplfinance_1_0.png)
     
 
 
@@ -70,7 +57,7 @@ stock_zh_index_daily_df = ak.stock_zh_index_daily_em(symbol="sh000001", start_da
 #stock_zh_index_daily_df = stock_zh_index_daily_df.iloc[-20:]
 stock_zh_index_daily_df.index   = pd.DatetimeIndex(stock_zh_index_daily_df['date'])
 #mpf.plot(data=stock_zh_index_daily_df)
-mpf.plot(stock_zh_index_daily_df[-20:],type='candle',mav=(5,10),volume=False,style=cus_style,title='上证指数000001')
+mpf.plot(stock_zh_index_daily_df[-20:],type='candle',mav=(5,10),volume=True,style=cus_style,title='上证指数000001')
 ```
 
 
@@ -86,7 +73,7 @@ stock_payh_df = ak.stock_zh_a_daily(symbol="sz000001", adjust="qfq")
 #print(stock_payh_df[-3:])
 stock_payh_df.index   = pd.DatetimeIndex(stock_payh_df['date'])
 #print(stock_payh_df)
-mpf.plot(stock_payh_df[-20:],type='candle',mav=(5,10),style=cus_style,volume=False,title='payh000001')
+mpf.plot(stock_payh_df[-20:],type='candle',mav=(5,10),style=cus_style,volume=True,title='payh000001')
 ```
 
 
@@ -109,7 +96,7 @@ rb0_df.rename(
         '收盘价': 'Close', '成交量': 'Volume'},
     inplace=True)       
 rb0_df.index   = pd.DatetimeIndex(rb0_df['Date'])
-mpf.plot(rb0_df[-20:],type='candle',mav=(5,10),style=cus_style,title='rb0主力合约')
+mpf.plot(rb0_df[-20:],type='candle',mav=(5,10),style=cus_style,volume=True,title='rb0主力合约')
 ```
 
 

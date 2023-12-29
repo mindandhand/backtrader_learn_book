@@ -8,4 +8,6 @@ python开源回测框架还有zipline、vnpy等，量化平台有Quantopian、�
 [successful-algorithmic-trading-ebook](https://www.quantstart.com/successful-algorithmic-trading-ebook/)<br>
 <br>
 
+![png](qrcode.png)
+
 [^1]: 内心真正想实现的，其实还是属于算法交易范畴，通过对历史数据或者某些经典书籍等等的研习, 希望找到一些似有似无的可循踪迹，亦或说是模式，利用历史数据建立模型，进行优化，在实盘中验证完善，并不断循环这个过程。盯盘无疑是浪费精力的，而且未必取得良好结果，也是对时间的一种浪费。算法交易不仅可以释放人力，让我们把有限的精力放到更有价值的事情上，而且可以智能盯盘，自动下单，减少心里因素不稳定造成的非理性决策。 臆想总是美好的，且行且珍惜吧。
