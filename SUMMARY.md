@@ -17,5 +17,6 @@
   * [2.2 行情可视化](Chapter2/行情可视化-mplfinance.md)
   * [2.3 时间序列分析](Chapter2/时间序列分析.md)
   * [2.4 使用Ta-lib进行指标计算](Chapter2/使用Ta-lib进行指标计算.md) 
+  * [2.5 基础实战1-自动运行找相关性高的股票](Chapter2/基础实战1-自动运行找相关性高的股票.md)
 * [第3章](Chapter3/README.md)
 * [第4章](Chapter4/README.md)
