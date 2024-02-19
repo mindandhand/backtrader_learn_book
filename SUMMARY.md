@@ -21,5 +21,6 @@
   * [2.7 跑几个常用的机器学习算法](Chapter2/跑几个常用的机器学习算法.md)
   * [2.8 蒙特卡洛模拟](Chapter2/蒙特卡洛模拟.md)
   * [2.9 凯利公式](Chapter2/凯利公式.md)
+  * [2.10 事件驱动](Chapter2/事件驱动.md)
 * [第3章](Chapter3/README.md)
 * [第4章](Chapter4/README.md)
