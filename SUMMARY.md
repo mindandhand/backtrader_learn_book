@@ -2,7 +2,7 @@
  * @Author: mindandhand 1639545667@qq.com
  * @Date: 2023-09-07 16:57:08
  * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2024-02-07 16:15:53
+ * @LastEditTime: 2024-02-23 14:02:08
  * @FilePath: /backtrader_learn_book/SUMMARY.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -22,5 +22,6 @@
   * [2.8 蒙特卡洛模拟](Chapter2/蒙特卡洛模拟.md)
   * [2.9 凯利公式](Chapter2/凯利公式.md)
   * [2.10 事件驱动](Chapter2/事件驱动.md)
+  * [2.11 python-元类基础](Chapter2/python-元类基础.md)
 * [第3章](Chapter3/README.md)
 * [第4章](Chapter4/README.md)
