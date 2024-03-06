@@ -25,4 +25,5 @@
   * [2.11 python-元类基础](Chapter2/python-元类基础.md)
   * [2.12 回测系统设计-行情数据接口](Chapter2/回测系统设计-行情数据接口.md)
 * [第3章](Chapter3/README.md)
+  * [3.1 backtrader概念篇](Chapter3/backtrader概念篇.md)
 * [第4章](Chapter4/README.md)
