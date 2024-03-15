@@ -2,7 +2,7 @@
  * @Author: mindandhand 1639545667@qq.com
  * @Date: 2023-09-07 16:57:08
  * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2024-02-23 14:02:08
+ * @LastEditTime: 2024-03-15 18:03:51
  * @FilePath: /backtrader_learn_book/SUMMARY.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -25,7 +25,7 @@
   * [2.11 python-元类基础](Chapter2/python-元类基础.md)
   * [2.12 回测系统设计-行情数据接口](Chapter2/回测系统设计-行情数据接口.md)
 * [第3章 backtrader接口及示例](Chapter3/README.md)
-  * [3.1 backtrader概念篇](Chapter3/backtrader概念篇.md)
+  * [3.1 backtrader-概念篇：名词概念说明](Chapter3/backtrader-概念篇：名词概念说明.md)
 * [第4章 backtrader源码解读](Chapter4/README.md)
 * [第5章 vnpy接口及示例](Chapter5/README.md)
 * [第6章 vnpy源码解读](Chapter6/README.md)
