@@ -26,6 +26,7 @@
   * [2.12 回测系统设计-行情数据接口](Chapter2/回测系统设计-行情数据接口.md)
 * [第3章 backtrader接口及示例](Chapter3/README.md)
   * [3.1 backtrader-概念篇：名词概念说明](Chapter3/backtrader-概念篇：名词概念说明.md)
+  * [3.2 backtrader-概念篇：平台使用](Chapter3/backtrader-概念篇：平台使用.md)
 * [第4章 backtrader源码解读](Chapter4/README.md)
 * [第5章 vnpy接口及示例](Chapter5/README.md)
 * [第6章 vnpy源码解读](Chapter6/README.md)
