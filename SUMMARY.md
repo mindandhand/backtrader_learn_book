@@ -24,6 +24,7 @@
   * [2.10 回测系统设计-事件驱动](Chapter2/回测系统设计-事件驱动.md)
   * [2.11 python-元类基础](Chapter2/python-元类基础.md)
   * [2.12 回测系统设计-行情数据接口](Chapter2/回测系统设计-行情数据接口.md)
+  * [2.13 金融风险指标库：Empyrical](Chapter2/金融风险指标库：Empyrical.md)
 * [第3章 backtrader接口及示例](Chapter3/README.md)
   * [3.1 backtrader-概念篇：名词概念说明](Chapter3/backtrader-概念篇：名词概念说明.md)
   * [3.2 backtrader-概念篇：平台使用](Chapter3/backtrader-概念篇：平台使用.md)
